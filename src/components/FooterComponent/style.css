@@ -1,0 +1,31 @@
+.footer {
+    display: flex ;
+    flex-direction: column;
+    position: relative;
+    background-color: black;
+    height: 209px;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright {
+    color : white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 142.6%;
+    position: absolute;
+    left: 32.15%;
+    right: 32.22%;
+    top: 64.11%;
+    bottom: 13.88%;
+}
+
+.kasa-logo-bw {
+    position: absolute;
+    left: 45.76%;
+    right: 45.76%;
+    top: 31.58%;
+    bottom: 49.55%;
+}
