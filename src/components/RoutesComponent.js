@@ -1,7 +1,7 @@
 import { Switch, Route } from "react-router-dom";
 import Home from "./HomeComponent/Home";
 import About from "./AboutComponent/About";
-import Error from "./ErrorComponent";
+import Error from "./ErrorComponent/index";
 
 function RoutesComponent() {
   return (

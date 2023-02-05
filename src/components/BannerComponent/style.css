@@ -1,5 +1,6 @@
 .banner-home {
     height: 223px;
+    width: 100%;
     border-radius: 25px;
     background-image: url(../../images/homeBanner.png);
     background-size: 100% 100%;
@@ -16,11 +17,12 @@
     font-size: 48px;
     font-weight: 500;
     color:white;
-    background-color: #706f726b;
+    background-color: #0100023d;
 }
 
 .banner-about {
     height: 223px;
+    width: 100%;
     border-radius: 25px;
     background-image: url(../../images/aboutBanner.png);
     background-size: 100% 100%;
