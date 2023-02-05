@@ -1,4 +1,4 @@
-const Annonce = [
+const Annonces = [
   {
     id: "c67ab8a7",
     title: "Appartement cosy",
@@ -579,3 +579,5 @@ const Annonce = [
     tags: ["Louvre", "Marais", "Rivoli"],
   },
 ];
+
+export default Annonces;
