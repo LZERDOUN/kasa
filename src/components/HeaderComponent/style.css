@@ -1,4 +1,6 @@
-/*Modifier surligner sur la navigation, à ajouter uniquement si survol ou sur la page correspondante*/
+/*Modifier surligner sur la navigation, à ajouter uniquement si survol ou sur la page correspondante
+Question : Margin en % pour un affichage responsive ou suivre données Figma en px ?? */
+
 
 .header {
     display : flex;
@@ -6,7 +8,7 @@
     align-items: center;
     height: 68px;
     margin-top: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 75px;
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -29,4 +31,10 @@ a {
     padding-left: 52px;
     color: #FF6060;
     font-size: 24px;
+    text-decoration: none;
+}
+
+.surligne {
+    text-decoration: underline;
+    text-decoration-color: #FF6060;;
 }

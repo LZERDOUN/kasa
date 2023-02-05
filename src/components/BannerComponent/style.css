@@ -1,0 +1,13 @@
+.banner {
+    height: 223px;
+    border-color: black;
+    border-radius: 25px;
+    background-image: url(../../images/homeBanner.png);
+    background-size: cover;
+}
+
+.banner::backdrop {
+    content: "";
+    position: absolute;
+    background-color: rgba(0,0,0,0.25);
+}

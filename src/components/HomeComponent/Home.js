@@ -1,13 +1,14 @@
 import "./style.css";
+import Banner from "../../components/BannerComponent/index";
 
 const Home = () => {
   return (
-    <>
+    <div className="body">
+      <Banner />
       <div className="nom-du-site">
-        <h1>Kasa</h1>
+        <p>Home Page</p>
       </div>
-      <div>Home Page</div>
-    </>
+    </div>
   );
 };
 
