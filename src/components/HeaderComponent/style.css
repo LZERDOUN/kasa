@@ -11,6 +11,7 @@ Question : Margin en % pour un affichage responsive ou suivre données Figma en 
     margin-bottom: 75px;
     margin-left: 100px;
     margin-right: 100px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav {

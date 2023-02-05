@@ -17,10 +17,10 @@ const Header = () => {
         )}
         {location.pathname === "/about" ? (
           <Link className="surligne" to="/about">
-            A propos
+            A Propos
           </Link>
         ) : (
-          <Link to="/about">A propos</Link>
+          <Link to="/about">A Propos</Link>
         )}
       </nav>
     </div>
