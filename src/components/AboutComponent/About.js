@@ -1,5 +1,12 @@
+import "./style.css";
+import Banner from "../../components/BannerComponent/index";
+
 const About = () => {
-  return <div>About</div>;
+  return (
+    <div className="body">
+      <Banner />
+    </div>
+  );
 };
 
 export default About;

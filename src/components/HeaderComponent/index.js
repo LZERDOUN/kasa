@@ -4,7 +4,6 @@ import logo from "../../assets/logo.png";
 
 const Header = () => {
   const location = useLocation();
-  console.log(location);
   return (
     <div className="header">
       <img src={logo} alt="Logo Kasa" className="kasa-logo" />

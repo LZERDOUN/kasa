@@ -1,13 +1,27 @@
-.banner {
+.banner-home {
     height: 223px;
-    border-color: black;
     border-radius: 25px;
     background-image: url(../../images/homeBanner.png);
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
-.banner::backdrop {
-    content: "";
-    position: absolute;
-    background-color: rgba(0,0,0,0.25);
+.opacity {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    margin: 0;
+    font-size: 48px;
+    font-weight: 500;
+    color:white;
+    background-color: #706f726b;
+}
+
+.banner-about {
+    height: 223px;
+    border-radius: 25px;
+    background-image: url(../../images/aboutBanner.png);
+    background-size: 100% 100%;
 }
