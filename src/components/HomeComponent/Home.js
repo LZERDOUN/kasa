@@ -6,7 +6,9 @@ import Annonces from "../Annonces";
 const Home = () => {
   return (
     <div className="body">
-      <Banner />
+      <Banner>
+        <p className="opacity">Chez vous, partout et ailleurs</p>
+      </Banner>
       <div className="container">
         {Annonces.map((annonce) => {
           return (
