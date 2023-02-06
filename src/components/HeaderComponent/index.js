@@ -8,20 +8,15 @@ const Header = () => {
     <div className="header">
       <img src={logo} alt="Logo Kasa" className="kasa-logo" />
       <nav>
-        {location.pathname === "/" ? (
-          <Link className="surligne" to="/">
-            Accueil
-          </Link>
-        ) : (
-          <Link to="/">Accueil</Link>
-        )}
-        {location.pathname === "/about" ? (
-          <Link className="surligne" to="/about">
-            A Propos
-          </Link>
-        ) : (
-          <Link to="/about">A Propos</Link>
-        )}
+        <Link className={location.pathname === "/" ? "surligne" : ""} to="/">
+          Accueil
+        </Link>
+        <Link
+          className={location.pathname === "/about" ? "surligne" : ""}
+          to="/about"
+        >
+          A Propos
+        </Link>
       </nav>
     </div>
   );
