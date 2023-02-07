@@ -1,0 +1,41 @@
+
+.dropdown {
+    margin-top : 20px;
+    margin-bottom: 20px;
+    width: 1023px;
+}
+.title {
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top : 20px;
+    color : white;
+    background-color:#FF6060;
+    height: 47px;
+    border-radius: 5px;
+    padding-left: 15px ;
+    padding-right: 30px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.collapsible {
+    border:#FF6060;
+    background-color: #FF6060;
+    color: white;
+    font-size: 24px;
+    padding-top: 7px;
+
+}
+
+.details {
+    padding: 5px 15px 5px 15px ;
+    background-color:#F6F6F6;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.details-show{
+    padding: 5px 15px 5px 15px ;
+    background-color:#F6F6F6;
+    border-radius: 0px 0px 5px 5px;
+}
