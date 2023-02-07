@@ -1,7 +1,7 @@
 import "./style.css";
 import Banner from "../../components/BannerComponent/index";
 import Collapse from "../../components/CollapseComponent/index";
-import Sections from "../Sections";
+import Sections from "../../data/Sections";
 
 const About = () => {
   return (

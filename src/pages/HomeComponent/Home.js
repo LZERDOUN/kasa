@@ -1,7 +1,7 @@
 import "./style.css";
-import Banner from "../../components/BannerComponent/index";
-import Card from "../../components/CardComponent/index";
-import Annonces from "../Annonces";
+import Banner from "../../components/BannerComponent";
+import Card from "../../components/CardComponent";
+import Annonces from "../../data/Annonces";
 
 const Home = () => {
   return (

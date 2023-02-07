@@ -6,7 +6,7 @@ import "./style.css";
 
 function Card(props) {
   return (
-    <Link to={"/" + props.id}>
+    <Link className="lien-card" to={"/" + props.id}>
       <div className="card-container">
         <img className="cover" src={props.image} alt={props.title} />
         <p className="titre">{props.title}</p>
