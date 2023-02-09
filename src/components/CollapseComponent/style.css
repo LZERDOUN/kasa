@@ -29,15 +29,23 @@
 }
 
 .details {
-    padding: 30px 15px 30px 15px ;
+    padding: 30px 15px 10px 15px ;
     background-color:#F6F6F6;
     border-radius: 0px 0px 5px 5px;
     line-height: 25px;
     margin-top: 0;
 }
 
+.fixed {
+    height: 150px;
+}
+
 .details-show{
     padding: 5px 15px 5px 15px ;
     background-color:#F6F6F6;
     border-radius: 0px 0px 5px 5px;
+}
+
+.item {
+    margin:0;
 }

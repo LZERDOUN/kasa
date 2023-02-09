@@ -4,6 +4,7 @@ import Collapse from "../../components/CollapseComponent";
 import Tag from "../../components/TagComponent";
 import Annonces from "../../data/Annonces";
 import Error from "../../pages/ErrorComponent/Error";
+import Rating from "../../components/RatingComponent";
 
 //Filtrer tableau annonce avec id
 
@@ -12,9 +13,6 @@ const Logement = () => {
   const annonce = Annonces.filter((annonce) => {
     return annonce.id === logementId;
   })[0];
-  console.log(annonce);
-  console.log(annonce.tags);
-  console.log(annonce.equipments);
 
   return (
     <>
@@ -27,7 +25,7 @@ const Logement = () => {
               <p className="location-logement">{annonce.location}</p>
               <div className="tags-logement">
                 {annonce.tags.map((tag) => {
-                  return <Tag tag={tag} />;
+                  return <Tag key={tag} tag={tag} />;
                 })}
               </div>
             </div>
@@ -40,19 +38,22 @@ const Logement = () => {
                   alt={annonce.title}
                 />
               </div>
-              <div className="rating"></div>
+              <div className="rating">
+                <Rating size={annonce.rating} full={true} />
+                <Rating size={5 - annonce.rating} full={false} />
+              </div>
             </div>
           </div>
           <div className="collapse-section">
             <Collapse
-              key={annonce.id}
               title="Description"
               details={annonce.description}
+              sized={false}
             />
             <Collapse
-              key={annonce.id}
               title="Equipements"
               details={annonce.equipments}
+              sized={false}
             />
           </div>
         </div>

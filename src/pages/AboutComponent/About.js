@@ -14,6 +14,7 @@ const About = () => {
               key={section.id}
               title={section.title}
               details={section.details}
+              sized={true}
             />
           );
         })}
