@@ -1,6 +1,6 @@
 import "./style.css";
-import Banner from "../../components/BannerComponent/index";
-import Collapse from "../../components/CollapseComponent/index";
+import Banner from "../../components/BannerComponent";
+import Collapse from "../../components/CollapseComponent";
 import Sections from "../../data/Sections";
 
 const About = () => {

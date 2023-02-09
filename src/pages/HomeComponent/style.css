@@ -3,16 +3,6 @@
     margin-right: 100px;
 }
 
-.container {
-    background-color: #F6F6F6;   
-    display: flex;
-    flex-wrap: wrap;
-    margin-top : 50px;
-    justify-content: space-around;
-    padding : 20px;
-    border-radius: 25px;
-}
-
 .opacity {
     display: flex;
     justify-content:center;
@@ -26,3 +16,15 @@
     color:white;
     background-color: #0100023d;
 }
+
+.container {
+    background-color: #F6F6F6;   
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0 50px 0;
+    justify-content: space-between;
+    padding : 50px;
+    gap:25px;
+    border-radius: 25px;
+}
+

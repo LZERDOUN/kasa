@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 
-//AJOUTER LIEN SUR LA CARD
-
 function Card(props) {
   return (
     <Link className="lien-card" to={"/" + props.id}>

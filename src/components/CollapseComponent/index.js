@@ -12,7 +12,7 @@ function Collapse(props) {
           {isActive ? <FaChevronUp /> : <FaChevronDown />}
         </button>
       </div>
-      {isActive && <div className="details">{props.details}</div>}
+      {isActive && <p className="details">{props.details}</p>}
     </div>
   );
 }

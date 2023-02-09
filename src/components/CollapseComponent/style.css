@@ -29,9 +29,11 @@
 }
 
 .details {
-    padding: 5px 15px 5px 15px ;
+    padding: 30px 15px 30px 15px ;
     background-color:#F6F6F6;
     border-radius: 0px 0px 5px 5px;
+    line-height: 25px;
+    margin-top: 0;
 }
 
 .details-show{
