@@ -1,17 +1,15 @@
-/*Modifier surligner sur la navigation, à ajouter uniquement si survol ou sur la page correspondante
-Question : Margin en % pour un affichage responsive ou suivre données Figma en px ?? */
-
-
 .header {
     display : flex;
     justify-content: space-between;
     align-items: center;
     height: 68px;
-    margin-top: 40px;
-    margin-bottom: 75px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 40px 100px 75px 100px;
     font-family: 'Montserrat', sans-serif;
+}
+
+.kasa-logo {
+    width: 210px;
+    height: 68px;
 }
 
 nav {
@@ -21,11 +19,6 @@ nav {
     width: 309px;
     height: 34px;
     color: #FF6060;
-}
-
-.kasa-logo {
-    width: 210px;
-    height: 68px;
 }
 
 a {
@@ -38,4 +31,28 @@ a {
 .surligne {
     text-decoration: underline;
     text-decoration-color: #FF6060;;
+}
+
+@media screen and (max-width: 600px) {
+    .header{
+        width: auto;
+        height: 47px;
+        margin: 20px
+    }
+
+    nav {
+        width: 140px;
+        height: 17px;
+    }
+
+    .kasa-logo {
+        width: 145px;
+        height: 47px;
+    }
+
+    nav a {
+        padding-left: 10px;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
 }

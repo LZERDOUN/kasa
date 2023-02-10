@@ -1,8 +1,19 @@
-.body {
+.body-about {
     margin-left: 100px;
     margin-right: 100px;
 }
 
 .container-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: white;
+
+}
+
+@media screen and (max-width: 600px) {
+    .body-about {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }

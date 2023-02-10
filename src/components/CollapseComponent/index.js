@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
-import { FaChevronUp, FaChevronDown } from "react-icons/fa";
+import chevronDown from "../../assets/chevronDown.png";
+import chevronUp from "../../assets/chevronUp.png";
 
 //CHANGER CHEVRON PAR DES IMAGES => INTERDICTION UTILISATION BIBLIOTHEQUE
 
@@ -22,7 +23,11 @@ function Collapse(props) {
       <div className="title" onClick={() => setIsActive(!isActive)}>
         <p>{props.title}</p>
         <button type="button" className="collapsible">
-          {isActive ? <FaChevronUp /> : <FaChevronDown />}
+          {isActive ? (
+            <img src={chevronUp} alt="Chevron Up" />
+          ) : (
+            <img src={chevronDown} alt="Chevron Down" />
+          )}
         </button>
       </div>
       {isActive && (

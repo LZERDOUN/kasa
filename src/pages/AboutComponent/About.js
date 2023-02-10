@@ -5,7 +5,7 @@ import Sections from "../../data/Sections";
 
 const About = () => {
   return (
-    <div className="body">
+    <div className="body-about">
       <Banner />
       <div className="container-section">
         {Sections.map((section) => {

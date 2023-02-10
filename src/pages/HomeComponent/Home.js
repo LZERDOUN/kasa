@@ -5,9 +5,11 @@ import Annonces from "../../data/Annonces";
 
 const Home = () => {
   return (
-    <div className="body">
+    <div className="body-home">
       <Banner>
-        <p className="opacity">Chez vous, partout et ailleurs</p>
+        <div className="opacity">
+          <p className="home-text">Chez vous, partout et ailleurs</p>
+        </div>
       </Banner>
       <div className="container">
         {Annonces.map((annonce) => {

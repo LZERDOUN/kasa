@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Error() {
   return (
-    <div className="body">
+    <div className="body-error">
       <p className="error-number">404</p>
       <p className="error-message">
         Oups! La page que vous demandez n'existe pas.

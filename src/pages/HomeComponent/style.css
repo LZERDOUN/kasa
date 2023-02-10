@@ -1,4 +1,4 @@
-.body {
+.body-home {
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -11,10 +11,13 @@
     height: 100%;
     border-radius: 25px;
     margin: 0;
+    background-color: #0100023d;
+}
+
+.home-text {
     font-size: 48px;
     font-weight: 500;
     color:white;
-    background-color: #0100023d;
 }
 
 .container {
@@ -26,5 +29,30 @@
     padding : 50px;
     gap:25px;
     border-radius: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    .body-home {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .opacity {
+        justify-content: flex-start;
+    }
+
+    .home-text {
+        font-size: 24px;
+        padding-left: 16px;
+        width: 200px;
+    }
+
+    .container {
+        background-color: white;  
+        flex-direction: column; 
+        margin: 0;
+        padding: 0 0 20px 0;
+    }
+
 }
 

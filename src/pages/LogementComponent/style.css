@@ -22,7 +22,6 @@
 
 .section-information {
     display: flex;
-    flex-direction: raw;
 }
 
 .section-1 {
@@ -66,14 +65,14 @@
     text-align: end;
     font-size: 18px;
     font-weight: 500;
-    
+    margin-right: 10px;    
+    width: 90px;
 }
 
 .host-picture {
     width:64px;
     height:64px;
     border-radius: 64px;
-    padding-left: 10px;
 }
 
 .rating {
@@ -82,3 +81,56 @@
     justify-content: flex-end;
     padding-top: 15px;
 }
+
+@media screen and (max-width: 600px) {
+    .body-logement {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .section-information{
+        flex-direction: column;
+    }
+
+    .section-1{
+        width:100%;
+    }
+
+    .title-logement {
+        font-size: 18px;
+    }
+
+    .location-logement{
+        font-size: 14px;
+    }
+
+    .section-2 {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding-top:15px;
+        width: 100%;
+    }
+
+    .host-name{
+        font-size: 12px;
+        width: 60px;
+    }
+
+    .host-picture{
+        height: 32px;
+        width: 32px;
+        border-radius: 20px;
+        padding-left: 0;
+    }
+
+
+    .collapse-section{
+        flex-direction: column;
+        gap:0;
+    }
+
+    .rating{
+        padding-top: 20px;
+    }
+}
+

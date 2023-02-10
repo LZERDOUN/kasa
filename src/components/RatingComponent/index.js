@@ -1,3 +1,4 @@
+import "./style.css";
 import etoileRose from "../../assets/etoile-rose.png";
 import etoileGrise from "../../assets/etoile-grise.png";
 
@@ -5,7 +6,7 @@ function Rating(props) {
   const numberOfStar = [...Array(parseInt(props.size))];
   return (
     <>
-      <div>
+      <div className="rating-composition">
         {numberOfStar.map((item, index) => {
           return (
             <img
