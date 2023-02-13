@@ -73,4 +73,10 @@
         font-size: 13px;
     }
 
+    .details{
+        font-size: 12px;
+        line-height: 17px;
+        padding-top: 15px
+    }
+
 }

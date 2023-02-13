@@ -2,6 +2,8 @@ import "./style.css";
 import { useLocation, Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 
+//UTILISER HOOK USENAVIGATE POUR LA BARRE DE NAVIGATION + ERROR ID SUR LA PAGE LOGEMENT
+
 const Header = () => {
   const location = useLocation();
   return (

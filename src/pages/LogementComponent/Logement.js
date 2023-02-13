@@ -5,6 +5,7 @@ import Tag from "../../components/TagComponent";
 import Annonces from "../../data/Annonces";
 import Error from "../../pages/ErrorComponent/Error";
 import Rating from "../../components/RatingComponent";
+import Carrousel from "../../components/CarrouselComponent";
 
 //Filtrer tableau annonce avec id
 
@@ -14,11 +15,14 @@ const Logement = () => {
     return annonce.id === logementId;
   })[0];
 
+  console.log(annonce.pictures);
   return (
     <>
       {annonce ? (
         <div className="body-logement">
-          <div className="caroussel-section"></div>
+          <div className="caroussel-section">
+            <Carrousel images={annonce.pictures} />
+          </div>
           <div className="section-information">
             <div className="section-1">
               <p className="title-logement">{annonce.title}</p>
