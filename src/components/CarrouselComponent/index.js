@@ -38,19 +38,23 @@ function Carrousel(props) {
   return (
     <div className="slider-container">
       <SliderContent currentImage={sliderImage[activeIndex]} />
-      <Arrows
-        prevSlide={() =>
-          setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)
-        }
-        nextSlide={() =>
-          setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)
-        }
-      />
-      <div className="compteur">
-        <p>
-          {activeIndex + 1}/{len + 1}
-        </p>
-      </div>
+      {len > 0 ? (
+        <>
+          <Arrows
+            prevSlide={() =>
+              setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)
+            }
+            nextSlide={() =>
+              setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)
+            }
+          />
+          <div className="compteur">
+            <p>
+              {activeIndex + 1}/{len + 1}
+            </p>
+          </div>
+        </>
+      ) : null}
     </div>
   );
 }

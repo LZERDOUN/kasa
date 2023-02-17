@@ -7,15 +7,12 @@ import Error from "../../pages/ErrorComponent/Error";
 import Rating from "../../components/RatingComponent";
 import Carrousel from "../../components/CarrouselComponent";
 
-//Filtrer tableau annonce avec id
-
 const Logement = () => {
   const logementId = useParams().id;
   const annonce = Annonces.filter((annonce) => {
     return annonce.id === logementId;
   })[0];
 
-  console.log(annonce.pictures);
   return (
     <>
       {annonce ? (

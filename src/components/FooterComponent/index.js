@@ -1,11 +1,10 @@
 import "./style.css";
-
 import logo from "../../assets/logo-black-and-white.png";
 
 const Footer = () => {
   return (
     <div className="footer">
-      <div classNma="logo">
+      <div className="logo">
         <img
           src={logo}
           alt="Logo Kasa Noir et Blanc"

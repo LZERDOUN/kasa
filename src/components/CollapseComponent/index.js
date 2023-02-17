@@ -3,14 +3,13 @@ import "./style.css";
 import chevronDown from "../../assets/chevronDown.png";
 import chevronUp from "../../assets/chevronUp.png";
 
-//CHANGER CHEVRON PAR DES IMAGES => INTERDICTION UTILISATION BIBLIOTHEQUE
-
 const renderInColumn = (details) => {
-  console.log(details);
   return (
     <>
-      {details.map((item) => (
-        <p className="item">{item}</p>
+      {details.map((item, index) => (
+        <p className="item" key={index}>
+          {item}
+        </p>
       ))}
     </>
   );
