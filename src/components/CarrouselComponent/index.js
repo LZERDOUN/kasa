@@ -42,7 +42,7 @@ function Carrousel(props) {
         <>
           <Arrows
             prevSlide={() =>
-              setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)
+              setActiveIndex(activeIndex === 0 ? len : activeIndex - 1)
             }
             nextSlide={() =>
               setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)

@@ -2,10 +2,10 @@ import "./style.css";
 import { useParams } from "react-router-dom";
 import Collapse from "../../components/CollapseComponent";
 import Tag from "../../components/TagComponent";
-import Annonces from "../../data/Annonces";
-import Error from "../../pages/ErrorComponent/Error";
 import Rating from "../../components/RatingComponent";
 import Carrousel from "../../components/CarrouselComponent";
+import Annonces from "../../data/Annonces";
+import Error from "../../pages/ErrorComponent/Error";
 
 const Logement = () => {
   const logementId = useParams().id;
