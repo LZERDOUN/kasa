@@ -20,7 +20,7 @@
     color:white;
 }
 
-.container {
+.container-annonces {
     background-color: #F6F6F6;   
     display: flex;
     flex-wrap: wrap;
@@ -31,12 +31,25 @@
     border-radius: 25px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
     .body-home {
         margin-left: 20px;
         margin-right: 20px;
     }
 
+    .home-text {
+        font-size: 30px;
+    }
+
+    .container-annonces {
+        background-color: white;  
+        flex-direction: column; 
+        margin: 0;
+        padding: 0 0 20px 0;
+    }
+}
+
+@media screen and (max-width: 601px) {
     .opacity {
         justify-content: flex-start;
     }
@@ -45,13 +58,6 @@
         font-size: 24px;
         padding-left: 16px;
         width: 200px;
-    }
-
-    .container {
-        background-color: white;  
-        flex-direction: column; 
-        margin: 0;
-        padding: 0 0 20px 0;
     }
 
 }

@@ -1,8 +1,8 @@
 import { Switch, Route } from "react-router-dom";
-import Home from "../pages/HomeComponent/Home";
-import About from "../pages/AboutComponent/About";
-import Error from "../pages/ErrorComponent/Error";
-import Logement from "../pages/LogementComponent/Logement";
+import Home from "../pages/HomeComponent/Home.jsx";
+import About from "../pages/AboutComponent/About.jsx";
+import Error from "../pages/ErrorComponent/Error.jsx";
+import Logement from "../pages/LogementComponent/Logement.jsx";
 
 function RoutesComponent() {
   return (

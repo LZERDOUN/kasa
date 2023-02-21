@@ -7,7 +7,7 @@ const renderInColumn = (details) => {
   return (
     <>
       {details.map((item, index) => (
-        <p className="item" key={index}>
+        <p className="item" key={`item_${index}`}>
           {item}
         </p>
       ))}

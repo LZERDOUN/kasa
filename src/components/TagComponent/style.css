@@ -10,6 +10,15 @@
     justify-content: center;
 }
 
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .tag {
+        height: 22px;
+        width: 140px;
+        font-size: 12px;
+    }
+}
+
+
 @media screen and (max-width: 600px) {
     .tag {
         height: 18px;

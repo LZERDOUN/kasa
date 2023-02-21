@@ -28,20 +28,35 @@
     text-decoration: underline;
 }
 
+@media screen and (max-width: 1024px) {
+    .body-error {
+        margin: 100px 50px 100px 50px;
+    }
+
+    .error-number {
+        width: auto;
+        height: 180px;
+        font-size: 150px;
+    }
+
+    .error-message {
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .body-error {
         margin: 200px 50px 200px 50px;
     }
-    
+
     .error-number {
-        width: auto;
         height: 99px;
         font-size: 96px;
     }
 
     .error-message {
         font-size: 18px;
-        text-align: center;
     }
 }
 

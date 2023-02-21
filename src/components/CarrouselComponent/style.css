@@ -53,10 +53,17 @@
     object-fit: cover;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
     .next, .prev {
         width: 12px;
         height: 20px;
     }
-
 }
+
+@media screen and (max-width: 600px) {
+    .compteur {
+        display: none;
+    }
+}
+
+

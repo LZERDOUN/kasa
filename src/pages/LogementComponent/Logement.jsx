@@ -1,11 +1,11 @@
 import "./style.css";
 import { useParams } from "react-router-dom";
-import Collapse from "../../components/CollapseComponent";
-import Tag from "../../components/TagComponent";
-import Rating from "../../components/RatingComponent";
-import Carrousel from "../../components/CarrouselComponent";
+import Collapse from "../../components/CollapseComponent/index";
+import Tag from "../../components/TagComponent/index";
+import Rating from "../../components/RatingComponent/index";
+import Carrousel from "../../components/CarrouselComponent/index";
 import Annonces from "../../data/Annonces";
-import Error from "../../pages/ErrorComponent/Error";
+import Error from "../ErrorComponent/Error.jsx";
 
 const Logement = () => {
   const logementId = useParams().id;
@@ -25,8 +25,8 @@ const Logement = () => {
               <p className="title-logement">{annonce.title}</p>
               <p className="location-logement">{annonce.location}</p>
               <div className="tags-logement">
-                {annonce.tags.map((tag) => {
-                  return <Tag key={tag} tag={tag} />;
+                {annonce.tags.map((tag, index) => {
+                  return <Tag key={`tag_${index}`} tag={tag} />;
                 })}
               </div>
             </div>

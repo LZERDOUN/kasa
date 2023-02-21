@@ -1,6 +1,6 @@
 import "./style.css";
-import Banner from "../../components/BannerComponent";
-import Card from "../../components/CardComponent";
+import Banner from "../../components/BannerComponent/index";
+import Card from "../../components/CardComponent/index";
 import Annonces from "../../data/Annonces";
 
 const Home = () => {
@@ -11,11 +11,11 @@ const Home = () => {
           <p className="home-text">Chez vous, partout et ailleurs</p>
         </div>
       </Banner>
-      <div className="container">
-        {Annonces.map((annonce) => {
+      <div className="container-annonces">
+        {Annonces.map((annonce, index) => {
           return (
             <Card
-              key={annonce.id}
+              key={`annonce_${index}`}
               id={annonce.id}
               title={annonce.title}
               image={annonce.cover}
